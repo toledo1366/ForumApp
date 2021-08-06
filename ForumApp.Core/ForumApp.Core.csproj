@@ -11,10 +11,11 @@
     <None Remove="ViewModels\" />
     <None Remove="Interfaces\" />
     <None Remove="Services\" />
+    <None Remove="Refit" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MvvmCross" Version="8.0.2" />
-    <PackageReference Include="RestSharp" Version="106.12.0" />
+    <PackageReference Include="Refit" Version="6.0.94" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
