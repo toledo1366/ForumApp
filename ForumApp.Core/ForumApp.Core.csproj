@@ -6,8 +6,20 @@
 
   <ItemGroup>
     <None Remove="MvvmCross" />
+    <None Remove="RestSharp" />
+    <None Remove="Models\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MvvmCross" Version="8.0.2" />
+    <PackageReference Include="RestSharp" Version="106.12.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>

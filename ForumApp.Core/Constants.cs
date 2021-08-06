@@ -3,8 +3,6 @@ namespace ForumApp.Core
 {
     public class Constants
     {
-        public Constants()
-        {
-        }
+        public string BaseUrl = "https://jsonplaceholder.typicode.com/";
     }
 }
