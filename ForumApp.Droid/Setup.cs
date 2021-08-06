@@ -1,10 +1,27 @@
 ﻿using System;
+using Microsoft.Extensions.Logging;
+using MvvmCross.IoC;
+using MvvmCross.Platforms.Android.Core;
+using MvvmCross.ViewModels;
+
 namespace ForumApp.Droid
 {
-    public class Setup
+    public class Setup:MvxAndroidSetup
     {
-        public Setup()
+        protected override IMvxApplication CreateApp(IMvxIoCProvider iocProvider)
         {
+            return new Core.App();
         }
+
+        protected override ILoggerProvider CreateLogProvider()
+        {
+            return null;
+        }
+
+        protected override ILoggerFactory CreateLogFactory()
+        {
+            return null;
+        }
+
     }
 }
