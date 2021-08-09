@@ -1,26 +1,18 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+using ForumApp.Core.ViewModels;
+using MvvmCross.Platforms.Android.Views;
 
 namespace ForumApp.Droid.Views
 {
     [Activity(Label = "CommentsView")]
-    public class CommentsView : Activity
+    public class CommentsView : MvxActivity<CommentViewModel>
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
+            SetContentView(Resource.Layout.CommentView);
         }
     }
 }

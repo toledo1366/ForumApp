@@ -16,6 +16,11 @@ namespace ForumApp.Core.Services
             restApi = RestService.For<IJsonPlaceHolderService>(BaseUrl);
         }
 
+        public async Task<List<Comment>> GetComments(int id)
+        {
+            return await restApi.GetComments(id);
+        }
+
         public async Task<Posts> GetPost(int id)
         {
             return await restApi.GetPost(id);
