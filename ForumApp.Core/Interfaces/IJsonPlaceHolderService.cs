@@ -13,5 +13,8 @@ namespace ForumApp.Core.Interfaces
 
         [Get("/posts")]
         Task<List<Posts>> GetPosts();
+
+        [Get("/comments?postId={id}")]
+        Task<List<Comment>> GetComments([AliasAs("id")] int id);
     }
 }
